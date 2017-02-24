@@ -4,7 +4,7 @@ get "/" do
 
   if params[:nombre] && params[:nombre]!= ""
 
-    <h1>"Hola #{params[:nombre]}!"</h1>
+    "Hola #{params[:nombre]}!"
   else
 
     "Hola desconocido!"
