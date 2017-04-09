@@ -1,25 +1,14 @@
-require "sinatra"
 
-get "/" do
+require 'sinatra'
 
-  if params[:nombre] && params[:nombre]!= ""
-
-    "Hola #{params[:nombre]}!"
-  else
-
-    "Hola desconocido!"
-
-  end
+get '/' do
 
 end
 
-get "/makers/juan" do
+get '/makers/' do
+    "<h1>Hola desconocido!</h1>"
+end
 
-
-<<-HTML
-
-<h1> Hola Juan! </h1>
-
-HTML
-
+get '/makers/:nombre' do
+    "<h1>Hola #{params[:nombre].capitalize}!</h1>"
 end
