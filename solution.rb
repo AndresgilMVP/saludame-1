@@ -12,3 +12,14 @@ get "/" do
   end
 
 end
+
+get "/makers/juan" do
+
+
+<<-HTML
+
+<h1> Hola Juan! </h1>
+
+HTML
+
+end
