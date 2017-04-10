@@ -5,6 +5,6 @@ get '/' do
 end
 
 post '/form' do
-  @name = params['name']
+  @name = params[:name]
   erb :form
 end
